@@ -158,3 +158,5 @@ def get_top_genres(aid, sp):
     
     return topg, rec
 
+if __name__ == "__main__":
+    app.run()
