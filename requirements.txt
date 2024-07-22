@@ -38,7 +38,6 @@ pyquery==2.0.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 pytz==2024.1
-pywin32==306
 redis==5.0.4
 requests==2.31.0
 requests-html==0.10.0
