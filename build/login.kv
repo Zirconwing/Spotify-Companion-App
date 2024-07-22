@@ -1,0 +1,44 @@
+#: include home.kv 
+#: include rec.kv
+#: include genres.kv
+#: include artists.kv
+#: include tracks.kv
+#: include menu.kv
+#: include upload.kv
+
+<LoginManager>
+    Screen:
+        name: 'LoginScreen'
+        BoxLayout:
+            size: root.width, root.height
+            orientation: "horizontal"
+            Label:
+                text: ""
+            BoxLayout:
+                orientation: "vertical"
+                size_hint: 0.5, 0.5
+                pos_hint: {"center_x":0.5,"center_y":0.5}
+                Label:
+                    text: "Spotify Stats App"
+                    size_hint: 0.5,0.5
+                    pos_hint: {"center_x":0.5,"center_y":0.5}
+                
+                Label:
+                    text: "Press Start and wait until window says to close it and re-enter the app.\n If you re-entered from inside the app it is because you did not choose the right data.json file so please press Start again."
+                    pos_hint: {"center_x":0.5,"center_y":0.5}
+                    halign: 'center'
+
+                Button:
+                    text: "Start"
+                    pos_hint: {"center_x":0.5,"center_y":0.5}
+                    size_hint: 1,0.3
+                    on_release: app.web_open()
+            Label:
+                text: ""
+    HomeScreen:
+    GenresScreen:
+    ArtistsScreen:
+    RecScreen:
+    MenuScreen:
+    TracksScreen:
+    UploadScreen:

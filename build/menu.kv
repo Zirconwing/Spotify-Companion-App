@@ -1,0 +1,23 @@
+<MenuScreen>
+    name: "MenuScreen"
+    BoxLayout:
+        size: root.width, root.height
+        orientation: "vertical"
+        Button:
+            text: "Home"
+            on_release: app.root.current = "HomeScreen" 
+        Button:
+            text: "Top Genres"
+            on_release: app.root.current = "GenresScreen"
+        Button:
+            text: "Top Artists"
+            on_release: app.root.current = "ArtistsScreen"
+        Button:
+            text: "Top Tracks"
+            on_release: app.root.current = "TracksScreen"
+        Button:
+            text: "Recommendations"
+            on_release: app.root.current = "RecScreen"
+        Button:
+            text: "Close"
+            on_release: quit()

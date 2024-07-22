@@ -1,0 +1,47 @@
+<HomeScreen>
+    name: 'HomeScreen'
+    RelativeLayout:
+        Button:
+            text: "Menu"
+            pos_hint: {"x":0, "y":0.95}
+            size_hint: (0.1,0.05)
+            on_release: app.root.current = "MenuScreen"
+        Label:
+            text: "Hello \n Where Would You LIke To Go?"
+            color: (1,1,1,1)
+            halign: "center"
+            pos_hint: {"center_x":0.5, "center_y":0.5}
+        BoxLayout:
+            orientation: "vertical"
+            size_hint: (0.5,0.2)
+            pos_hint: {"center_x": 0.5, "center_y": 0.3}
+            Button:
+                text: "Top Genres"
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                size_hint: (0.5,0.1)
+                on_release: app.root.current = "GenresScreen"
+            Button:
+                text: "Top Artists"
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                size_hint: (0.5,0.1)
+                on_release: app.root.current = "ArtistsScreen"
+            Button:
+                text: "Top Tracks"
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                size_hint: (0.5,0.1)
+                on_release: app.root.current = "RecScreen"
+            Button:
+                text: "Recommendations"
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                size_hint: (0.5,0.1)
+                on_release: app.root.current = "TracksScreen"
+            Button:
+                text: "Close"
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                size_hint: (0.5,0.1)
+                on_release: quit()
+            Label:
+                text: ""
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                size_hint: (0.5,0.1)
+

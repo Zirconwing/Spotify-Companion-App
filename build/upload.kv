@@ -1,0 +1,20 @@
+<UploadScreen>
+    name: "UploadScreen"
+    id: my_upload
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        Label:
+            id: my_label
+            text: "Select data.json file from downloads"
+
+        FileChooserIconView:
+            id:FileChooser
+            on_selection: my_upload.selected(FileChooser.selection)
+        
+        Button:
+            text: "Submit"
+            size_hint: 0.3,0.3
+            pos_hint: {"center_x":0.5,"center_y":0.5}
+            on_press: app.pressed(FileChooser.selection)

@@ -1,0 +1,48 @@
+<GenresScreen>
+    name: 'GenresScreen'
+    on_pre_enter: 
+        app.contents()
+    on_enter:
+        app.genres()
+    BoxLayout:
+        size: root.width,root.height
+        orientaion: "horizontal"
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "Menu"
+                pos_hint: {"x":0,"y":0.95}
+                size_hint: (0.2,0.05)
+                on_release: app.root.current = "MenuScreen"
+            Label:
+                text: "Here are your\n Top genres:"
+                halign: 'center'
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+        BoxLayout:
+            orientation: "vertical"
+            Label:
+                text: app.gen[0]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+            Label:
+                text: app.gen[1]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+            Label:
+                text: app.gen[2]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+            Label:
+                text: app.gen[3]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+            Label:
+                text: app.gen[4]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+

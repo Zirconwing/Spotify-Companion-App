@@ -1,0 +1,48 @@
+<TracksScreen>
+    name: 'TracksScreen'
+    on_pre_enter:
+        app.contents()
+    on_enter:
+        app.tracks()
+    BoxLayout:
+        size: root.width,root.height
+        orientaion: "horizontal"
+        BoxLayout:
+            orientation: "horizontal"
+            Button:
+                text: "Menu"
+                pos_hint: {"x":0,"y":0.95}
+                size_hint: (0.2,0.05)
+                on_release: app.root.current = "MenuScreen"
+            Label:
+                text: "Here are the songs\n You listen to the most:"
+                halign: 'center'
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+        BoxLayout:
+            orientation: "vertical"
+            Label:
+                text: app.track[0]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+            Label:
+                text: app.track[1]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+            Label:
+                text: app.track[2]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+            Label:
+                text: app.track[3]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+            Label:
+                text: app.track[4]
+                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                halign: 'center'
+                font_name: './YUGOTHR.TTC'
+
