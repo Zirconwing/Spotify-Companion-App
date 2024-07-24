@@ -34,8 +34,6 @@ class LoginApp(App):
                 self.root.current = "HomeScreen"
         except:
             pass
-    
-
     def contents(self):
         try:
             f = open(self.filename, 'r')
@@ -65,5 +63,4 @@ class LoginApp(App):
             self.track[x] = i
             x += 1
 
-            
 LoginApp().run()
