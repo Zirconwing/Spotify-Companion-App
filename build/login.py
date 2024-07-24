@@ -20,7 +20,7 @@ class LoginApp(App):
         self.icon = "applogo.png"
         return LoginManager()
     def web_open(self):
-        web.open_new_tab('http://127.0.0.1:5000')
+        web.open_new_tab('https://spotify-companion-site-cec648620ce1.herokuapp.com/')
         self.root.current = "UploadScreen"
     rec = ListProperty(['']*5)
     art = ListProperty(['']*5)
