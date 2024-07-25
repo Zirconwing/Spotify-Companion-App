@@ -1,6 +1,7 @@
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager
 from kivy.properties import ListProperty
+from kivy import platform
 from home import HomeScreen
 from Recommendations import RecScreen
 from genres import GenresScreen
@@ -11,13 +12,15 @@ from upload import UploadScreen
 import string
 import webbrowser as web
 import json
-
 class LoginManager(ScreenManager):
     pass
 
 class MainApp(App):
     def build(self):
         self.icon = "applogo.png"
+        if platform == 'android':
+            from android.permissions import request_permissions, Permission
+            request_permissions([Permission.READ_EXTERNAL_STORAGE])
         return LoginManager()
     def web_open(self):
         web.open_new_tab('https://spotify-companion-site-cec648620ce1.herokuapp.com/')
