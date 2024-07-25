@@ -24,7 +24,7 @@
                     pos_hint: {"center_x":0.5,"center_y":0.5}
                 
                 Label:
-                    text: "Press Start and wait until window says to close it and re-enter the app.\n If you re-entered from inside the app it is because you did not choose the right data.json file so please press Start again."
+                    text: "Press Start and wait until you are requested to download data.json.\n Download and re-enter the app and press Select file.\n If you re-entered from inside the app it is because\n you did not choose the right data.json file\n so please press Select file to choose again."
                     pos_hint: {"center_x":0.5,"center_y":0.5}
                     halign: 'center'
 
@@ -33,6 +33,12 @@
                     pos_hint: {"center_x":0.5,"center_y":0.5}
                     size_hint: 1,0.3
                     on_release: app.web_open()
+                Button:
+                    text: "Select file"
+                    pos_hint: {"center_x":0.5,"center_y":0.5}
+                    size_hint: 1,0.3
+                    on_release: app.root.current = 'UploadScreen'
+
             Label:
                 text: ""
     HomeScreen:

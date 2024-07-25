@@ -12,37 +12,43 @@
             Button:
                 text: "Menu"
                 pos_hint: {"x":0,"y":0.95}
-                size_hint: (0.2,0.05)
+                size_hint: (0.4,0.05)
                 on_release: app.root.current = "MenuScreen"
             Label:
                 text: "Here are your\n Top genres:"
                 halign: 'center'
-                pos_hint: {"center_x":0.5, "center_y": 0.5}
+                font_size: 11
+                pos_hint: {"center_x":0.5, "center_y": 0.6}
         BoxLayout:
             orientation: "vertical"
             Label:
                 text: app.gen[0]
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
                 halign: 'center'
+                font_size: 11
                 font_name: './YUGOTHR.TTC'
             Label:
                 text: app.gen[1]
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
                 halign: 'center'
+                font_size: 11
                 font_name: './YUGOTHR.TTC'
             Label:
                 text: app.gen[2]
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
                 halign: 'center'
+                font_size: 11
                 font_name: './YUGOTHR.TTC'
             Label:
                 text: app.gen[3]
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
                 halign: 'center'
+                font_size: 11
                 font_name: './YUGOTHR.TTC'
             Label:
                 text: app.gen[4]
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
                 halign: 'center'
+                font_size: 11
                 font_name: './YUGOTHR.TTC'
 

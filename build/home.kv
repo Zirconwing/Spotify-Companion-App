@@ -4,7 +4,7 @@
         Button:
             text: "Menu"
             pos_hint: {"x":0, "y":0.95}
-            size_hint: (0.1,0.05)
+            size_hint: (0.4,0.05)
             on_release: app.root.current = "MenuScreen"
         Label:
             text: "Hello \n Where Would You LIke To Go?"
@@ -18,27 +18,27 @@
             Button:
                 text: "Top Genres"
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
-                size_hint: (0.5,0.1)
+                size_hint: (0.8,0.1)
                 on_release: app.root.current = "GenresScreen"
             Button:
                 text: "Top Artists"
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
-                size_hint: (0.5,0.1)
+                size_hint: (0.8,0.1)
                 on_release: app.root.current = "ArtistsScreen"
             Button:
                 text: "Top Tracks"
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
-                size_hint: (0.5,0.1)
-                on_release: app.root.current = "RecScreen"
+                size_hint: (0.8,0.1)
+                on_release: app.root.current = "TracksScreen"
             Button:
                 text: "Recommendations"
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
-                size_hint: (0.5,0.1)
-                on_release: app.root.current = "TracksScreen"
+                size_hint: (0.8,0.1)
+                on_release: app.root.current = "RecScreen"
             Button:
                 text: "Close"
                 pos_hint: {"center_x":0.5, "center_y": 0.5}
-                size_hint: (0.5,0.1)
+                size_hint: (0.8,0.1)
                 on_release: quit()
             Label:
                 text: ""

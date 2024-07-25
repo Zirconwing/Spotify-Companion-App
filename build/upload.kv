@@ -12,9 +12,16 @@
         FileChooserIconView:
             id:FileChooser
             on_selection: my_upload.selected(FileChooser.selection)
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: "Back"
+                size_hint: 0.3,0.3
+                pos_hint: {"center_x":0.5,"center_y":0.5}
+                on_release: app.root.current = 'LoginScreen'
+            Button:
+                text: "Submit"
+                size_hint: 0.3,0.3
+                pos_hint: {"center_x":0.5,"center_y":0.5}
+                on_release: app.pressed(FileChooser.selection)
         
-        Button:
-            text: "Submit"
-            size_hint: 0.3,0.3
-            pos_hint: {"center_x":0.5,"center_y":0.5}
-            on_press: app.pressed(FileChooser.selection)

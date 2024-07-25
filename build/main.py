@@ -24,7 +24,6 @@ class MainApp(App):
         return LoginManager()
     def web_open(self):
         web.open_new_tab('https://spotify-companion-site-cec648620ce1.herokuapp.com/')
-        self.root.current = "UploadScreen"
     rec = ListProperty(['']*5)
     art = ListProperty(['']*5)
     gen = ListProperty(['']*5)
