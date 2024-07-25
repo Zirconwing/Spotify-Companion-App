@@ -15,7 +15,7 @@ import json
 class LoginManager(ScreenManager):
     pass
 
-class LoginApp(App):
+class MainApp(App):
     def build(self):
         self.icon = "applogo.png"
         return LoginManager()
@@ -63,4 +63,4 @@ class LoginApp(App):
             self.track[x] = i
             x += 1
 
-LoginApp().run()
+MainApp().run()
