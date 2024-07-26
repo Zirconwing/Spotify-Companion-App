@@ -8,3 +8,9 @@ This project was created as a simple passtime during summer.
 * Uses Flask in Python to work with Spotify Web API and .json files
 * Has a simple user interface
 * Is easy to install and start using
+
+## Installation:
+1. On Android ensure "Unknown Sources" is on so you can download the apk
+2. Download build/bin/spotifycompanion-0.1-arm64-v8a_armeabi-v7a-debug.apk onto the Android
+3. Run the apk on the android
+4. You are ready to start the app
