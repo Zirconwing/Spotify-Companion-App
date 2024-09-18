@@ -14,7 +14,7 @@ app.secret_key = os.getenv('secret_key')
 app.config['SESSION_COOKIE_NAME'] = 'Ugonna Cookie'
 TOKEN_INFO = "token_info"
 
-@app.route('/')
+@app.route('/main')
 def login():
     sp_oauth = create_spotify_oauth()
     auth_url = sp_oauth.get_authorize_url()
@@ -34,7 +34,7 @@ def getTracks():
     try:
         token_info = get_token()
     except:
-        return redirect("/")
+        return redirect("/main")
     sp = spotipy.Spotify(auth=token_info['access_token'])
     artists, aid = get_top_artists(sp)
     tracks, tid = get_top_songs(sp)
