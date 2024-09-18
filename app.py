@@ -14,7 +14,7 @@ app.secret_key = os.getenv('secret_key')
 app.config['SESSION_COOKIE_NAME'] = 'Ugonna Cookie'
 TOKEN_INFO = "token_info"
 
-@app.route('/main')
+@app.route('/')
 def login():
     sp_oauth = create_spotify_oauth()
     auth_url = sp_oauth.get_authorize_url()
