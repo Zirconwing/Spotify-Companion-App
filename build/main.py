@@ -23,7 +23,7 @@ class MainApp(App):
             request_permissions([Permission.READ_EXTERNAL_STORAGE])
         return LoginManager()
     def web_open(self):
-        web.open_new_tab('https://spotify-companion-site-cec648620ce1.herokuapp.com/')
+        web.open_new_tab('http://spotify-companion-app-production.up.railway.app/')
     rec = ListProperty(['']*5)
     art = ListProperty(['']*5)
     gen = ListProperty(['']*5)
