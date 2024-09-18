@@ -34,7 +34,7 @@ def getTracks():
     try:
         token_info = get_token()
     except:
-        return redirect("/main")
+        return redirect("/")
     sp = spotipy.Spotify(auth=token_info['access_token'])
     artists, aid = get_top_artists(sp)
     tracks, tid = get_top_songs(sp)
