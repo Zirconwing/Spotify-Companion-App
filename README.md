@@ -10,7 +10,7 @@ This project was created as a simple passtime during summer.
 * Is easy to install and start using
 
 ## Download:
-* [spotifycompanion-0.1-arm64-v8a_armeabi-v7a-debug.apk] (build/bin/spotifycompanion-0.1-arm64-v8a_armeabi-v7a-debug.apk)
+* [spotifycompanion-0.1-arm64-v8a_armeabi-v7a-debug.apk](https://github.com/Zirconwing/Spotify-Companion-App/blob/main/build/bin/spotifycompanion-0.1-arm64-v8a_armeabi-v7a-debug.apk)
 
 ## Installation:
 1. On Android ensure "Unknown Sources" is on so you can download the apk
